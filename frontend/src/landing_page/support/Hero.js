@@ -6,7 +6,7 @@ function Hero() {
       {/* Header */}
       <div className="support-header">
         <h4>Support Portal</h4>
-        <a href="#" className="track-tickets">Track Tickets</a>
+        <a href="/support/tickets" className="track-tickets">Track Tickets</a>
       </div>
 
       {/* Main content */}
@@ -25,10 +25,10 @@ function Hero() {
             />
 
             <div className="support-links">
-              <a href="#">Track account opening</a>
-              <a href="#">Track segment activation</a>
-              <a href="#">Intraday margins</a>
-              <a href="#">Kite user manual</a>
+              <a href="/support/account-opening">Track account opening</a>
+              <a href="/support/segment-activation">Track segment activation</a>
+              <a href="/support/intraday-margins">Intraday margins</a>
+              <a href="/support/user-manual">Kite user manual</a>
             </div>
           </div>
 
@@ -37,10 +37,10 @@ function Hero() {
             <h2 className="support-heading">Featured</h2>
             <ol>
               <li>
-                <a href="#">Current Takeovers and Delisting - January 2024</a>
+                <a href="/support/takeovers">Current Takeovers and Delisting - January 2024</a>
               </li>
               <li>
-                <a href="#">Latest Intraday leverages - MIS & CO</a>
+                <a href="/support/intraday-leverages">Latest Intraday leverages - MIS & CO</a>
               </li>
             </ol>
           </div>
