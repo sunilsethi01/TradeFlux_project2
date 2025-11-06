@@ -56,11 +56,6 @@ coverage/
 .nuxt/
 .vuepress/dist
 
-# Package lock files (can be regenerated)
-package-lock.json
-frontend/package-lock.json
-backend/package-lock.json
-
 # Sensitive data
 config/secrets.js
 *.pem
