@@ -23,9 +23,8 @@ function Navbar({ isAuthenticated, onLogout }) {
             alt="Trade Flux Logo"
           />
         </Link>
-        {/* Mobile Hamburger - Outside collapse div, visible only on mobile */}
         <button
-          className="navbar-toggler navbar-toggler-mobile"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -89,17 +88,16 @@ function Navbar({ isAuthenticated, onLogout }) {
                 Support
               </Link>
             </li>
-            {/* Desktop Hamburger - Inside menu, visible only on desktop */}
-            <li className="nav-item">
+            {/* Desktop Hamburger - Shows AFTER Support on desktop only */}
+            <li className="nav-item desktop-hamburger-item">
               <button
-                className="navbar-toggler navbar-toggler-desktop"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
-                style={{border: 'none', background: 'none', marginLeft: '15px'}}
               >
                 <span className="navbar-toggler-icon"></span>
               </button>

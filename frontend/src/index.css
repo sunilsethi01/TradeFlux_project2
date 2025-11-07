@@ -115,31 +115,21 @@ code {
   width: 24px;
   height: 24px;
 }
-
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
-  outline: none !important;
-}
-
-/* Mobile Hamburger - Visible only on mobile */
-.navbar-toggler-mobile {
-  display: block;
-}
-
 @media screen and (min-width: 992px) {
-  .navbar-toggler-mobile {
+  /* Hide the standard hamburger on desktop */
+  .container-fluid > .navbar-toggler {
     display: none !important;
   }
 }
 
-/* Desktop Hamburger - Visible only on desktop */
-.navbar-toggler-desktop {
-  display: none;
+/* Desktop hamburger (after Support) - visible only on desktop */
+.desktop-hamburger-item {
+  display: none !important;
 }
 
 @media screen and (min-width: 992px) {
-  .navbar-toggler-desktop {
-    display: inline-block !important;
+  .desktop-hamburger-item {
+    display: list-item !important;
   }
 }
 
