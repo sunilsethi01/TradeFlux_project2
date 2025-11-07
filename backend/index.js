@@ -31,9 +31,13 @@ const corsOptions = {
       return callback(null, true);
     }
     
-    // Allow production frontend URL
-    if (process.env.FRONTEND_URL && origin === process.env.FRONTEND_URL) {
-      return callback(null, true);
+    // Allow production frontend URL (normalize by removing trailing slash)
+    if (process.env.FRONTEND_URL) {
+      const normalizedFrontendUrl = process.env.FRONTEND_URL.replace(/\/$/, '');
+      const normalizedOrigin = origin.replace(/\/$/, '');
+      if (normalizedOrigin === normalizedFrontendUrl) {
+        return callback(null, true);
+      }
     }
     
     // Default to localhost:3000 if no FRONTEND_URL is set
