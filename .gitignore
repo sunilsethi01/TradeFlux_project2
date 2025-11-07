@@ -23,6 +23,7 @@ backend/SETUP_GUIDE.md
 backend/WINDOWS_TESTING_GUIDE.md
 frontend/.env.example
 frontend/deployment_guide.md
+DEPLOYMENT_GUIDE.md
 
 # Build files
 frontend/build/
