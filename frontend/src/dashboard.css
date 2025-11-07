@@ -1323,5 +1323,470 @@ hr {
   background: linear-gradient(135deg, #4a90e2 0%, #2a5298 100%);
 }
 
+/* ========================================
+   MOBILE RESPONSIVE STYLES
+   ======================================== */
+
+/* Tablet and Below */
+@media screen and (max-width: 1024px) {
+  .dashboard-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .watchlist-container {
+    flex-basis: 100%;
+    width: 100%;
+    height: 400px;
+    order: -1;
+  }
+
+  .content {
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .col {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .menu-container {
+    flex-basis: 100%;
+    padding: 0 15px;
+  }
+
+  .menus ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .menus li {
+    margin-right: 15px;
+  }
+
+  .watchlist-number {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+  /* Topbar */
+  .topbar-container {
+    height: auto;
+    min-height: 50px;
+    flex-wrap: wrap;
+    padding: 8px 0;
+  }
+
+  .indices-container {
+    flex-basis: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 10px;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .menu-container {
+    flex-basis: 100%;
+    padding: 8px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dashboard-brand img,
+  .dashboard-brand .arrow-shape {
+    width: 25px;
+    height: 18px;
+  }
+
+  .menus {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menus ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .menus li {
+    margin-right: 0;
+  }
+
+  .menu {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  .profile {
+    margin-left: 10px;
+    padding: 4px 8px;
+  }
+
+  .profile .avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+    margin-right: 6px;
+  }
+
+  .profile .username {
+    font-size: 0.75rem;
+  }
+
+  /* Index Display */
+  .index {
+    font-size: 0.7rem;
+  }
+
+  .index-points {
+    font-size: 0.8rem;
+  }
+
+  .percent {
+    font-size: 0.65rem;
+  }
+
+  /* Dashboard Content */
+  .content {
+    padding: 15px;
+  }
+
+  .funds {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .funds p {
+    margin-right: 0;
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  /* Tables */
+  .table {
+    padding: 5% 5%;
+    overflow-x: auto;
+  }
+
+  .order-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .order-table table {
+    min-width: 600px;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding: 10px 6px;
+    font-size: 0.8rem;
+  }
+
+  /* Stats */
+  .data {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .data hr {
+    display: none;
+  }
+
+  .data .first h3 {
+    font-size: 2rem;
+  }
+
+  /* Titles */
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .col h5 {
+    font-size: 1.6rem;
+  }
+
+  .col span {
+    font-size: 0.85rem;
+  }
+
+  /* Watchlist */
+  .watchlist-container {
+    height: 300px;
+  }
+
+  .search {
+    padding: 12px 15px;
+    font-size: 0.85rem;
+  }
+
+  .counts {
+    right: 15px;
+    font-size: 0.8rem;
+  }
+
+  .list li {
+    padding: 12px 10px;
+  }
+
+  .item {
+    font-size: 0.75rem;
+  }
+
+  .actions span button {
+    width: 35px;
+    height: 28px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+  }
+
+  .watchlist-number {
+    padding: 15px 10px;
+  }
+
+  .watchlist-number ul li {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* Profile Dropdown */
+  .profile-dropdown {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .profile-dropdown > div:first-child {
+    padding: 20px 15px !important;
+  }
+
+  .profile-dropdown > div:first-child h4 {
+    font-size: 1.1rem !important;
+  }
+
+  .profile-dropdown > div:nth-child(2) {
+    margin: 12px !important;
+    padding: 15px !important;
+  }
+
+  /* No Orders Section */
+  .no-orders {
+    padding: 60px 20px;
+    margin: 20px;
+  }
+
+  .no-orders .icon {
+    transform: scale(3);
+  }
+
+  .no-orders p {
+    font-size: 1rem;
+    margin-top: 8%;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  /* Topbar */
+  .topbar-container {
+    min-height: 45px;
+  }
+
+  .indices-container {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 8px;
+  }
+
+  .nifty,
+  .sensex {
+    gap: 4px;
+  }
+
+  .back-btn {
+    font-size: 0.7rem;
+    padding: 5px 8px !important;
+  }
+
+  /* Menu */
+  .menu-container {
+    padding: 6px 10px;
+  }
+
+  .dashboard-brand img,
+  .dashboard-brand .arrow-shape {
+    width: 22px;
+    height: 16px;
+  }
+
+  .menu {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+
+  .profile {
+    padding: 3px 6px;
+  }
+
+  .profile .avatar {
+    width: 24px;
+    height: 24px;
+    font-size: 0.65rem;
+    margin-right: 4px;
+  }
+
+  .profile .username {
+    font-size: 0.7rem;
+  }
+
+  /* Content */
+  .content {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  /* Tables */
+  .table {
+    padding: 4%;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .imp {
+    font-size: 1.2rem;
+  }
+
+  .col h5 {
+    font-size: 1.4rem;
+  }
+
+  .col h5 span {
+    font-size: 0.8rem;
+  }
+
+  .col p {
+    font-size: 0.8rem;
+  }
+
+  /* Watchlist */
+  .watchlist-container {
+    height: 250px;
+  }
+
+  .search {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+
+  .list li {
+    padding: 10px 8px;
+  }
+
+  .item {
+    font-size: 0.7rem;
+  }
+
+  .item-info span:nth-child(1) {
+    flex: 1;
+    font-size: 0.7rem;
+  }
+
+  .item-info span:nth-child(2),
+  .item-info span:nth-child(3) {
+    font-size: 0.7rem;
+  }
+
+  .actions span button {
+    width: 32px;
+    height: 26px;
+    font-size: 0.65rem;
+  }
+
+  .watchlist-number ul li {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  /* Profile Dropdown */
+  .profile-dropdown {
+    width: 100%;
+  }
+
+  /* Username Section */
+  .username h6 {
+    font-size: 1.4rem;
+  }
+
+  .section span p {
+    font-size: 1rem;
+  }
+
+  .data .first h3 {
+    font-size: 1.8rem;
+  }
+
+  .data .first p,
+  .data .second p {
+    font-size: 0.75rem;
+  }
+
+  /* No Orders */
+  .no-orders {
+    padding: 40px 15px;
+    margin: 15px;
+  }
+
+  .no-orders .icon {
+    transform: scale(2.5);
+  }
+
+  .no-orders p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Landscape Mobile Fix */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .dashboard-container {
+    height: auto;
+  }
+
+  .watchlist-container {
+    height: 300px;
+  }
+}
+
+/* Prevent horizontal scroll on dashboard */
+.dashboard-container,
+.content,
+.watchlist-container {
+  overflow-x: hidden;
+}
+
 
 
