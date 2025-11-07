@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { API_URL } from '../config';
 
 const Menu = ({ onLogout }) => {
@@ -49,14 +47,8 @@ const Menu = ({ onLogout }) => {
   const handleLogout = () => {
     if (window.confirm("Are you sure you want to logout?")) {
       localStorage.removeItem('token');
-      toast.success("Logged out successfully!", {
-        position: "bottom-right",
-        autoClose: 2000
-      });
       if (onLogout) onLogout();
-      setTimeout(() => {
-        navigate('/');
-      }, 500);
+      navigate('/');
     }
   };
 
@@ -257,7 +249,6 @@ const Menu = ({ onLogout }) => {
           </>
         )}
       </div>
-      <ToastContainer />
     </div>
   );
 };
