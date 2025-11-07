@@ -95,6 +95,62 @@ code {
   width: 100%;
 }
 
+/* Hamburger Menu Styling - Visible on all screens, positioned after Support */
+.navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+  padding: 8px 10px !important;
+  background: transparent !important;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navbar-toggler:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 1) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+  outline: none !important;
+}
+
+/* Keep hamburger visible on all screen sizes as a menu item */
+
+/* Mobile menu styling */
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    background: linear-gradient(135deg, #2a5298 0%, #387ed1 100%);
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar-collapse .nav-link {
+    color: #fff !important;
+    padding: 12px 15px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .navbar-collapse .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    transform: translateX(5px);
+  }
+
+  .navbar-collapse .nav-item:last-child .nav-link {
+    border-bottom: none;
+  }
+}
+
 /* ========================================
    ABOUT PAGE STYLING
    ======================================== */
