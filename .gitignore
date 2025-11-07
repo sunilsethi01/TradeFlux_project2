@@ -16,9 +16,13 @@ frontend/.env
 .env.test.local
 .env.production.local
 
-# Keep .env.example files (these are safe templates)
-!**/.env.example
-!.env.example
+# Local documentation files (keep locally, not on GitHub)
+backend/API_DOCUMENTATION.md
+backend/.env.example
+backend/SETUP_GUIDE.md
+backend/WINDOWS_TESTING_GUIDE.md
+frontend/.env.example
+frontend/deployment_guide.md
 
 # Build files
 frontend/build/
