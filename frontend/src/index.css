@@ -121,7 +121,27 @@ code {
   outline: none !important;
 }
 
-/* Keep hamburger visible on all screen sizes as a menu item */
+/* Mobile Hamburger - Visible only on mobile */
+.navbar-toggler-mobile {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-toggler-mobile {
+    display: none !important;
+  }
+}
+
+/* Desktop Hamburger - Visible only on desktop */
+.navbar-toggler-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-toggler-desktop {
+    display: inline-block !important;
+  }
+}
 
 /* Mobile menu styling */
 @media screen and (max-width: 991px) {
