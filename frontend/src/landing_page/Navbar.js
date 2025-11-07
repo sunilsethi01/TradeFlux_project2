@@ -23,17 +23,6 @@ function Navbar({ isAuthenticated, onLogout }) {
             alt="Trade Flux Logo"
           />
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             {!isAuthenticated && (
@@ -87,6 +76,20 @@ function Navbar({ isAuthenticated, onLogout }) {
               <Link className="nav-link" to="/support">
                 Support
               </Link>
+            </li>
+            <li className="nav-item">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style={{border: 'none', background: 'none', marginLeft: '15px'}}
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
             </li>
           </ul>
         </div>
