@@ -8,3 +8,8 @@
   NPM_VERSION = "9.8.1"
   CI = "false"
   REACT_APP_API_URL = "https://tradeflux-backend-api.onrender.com"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
