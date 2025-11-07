@@ -1427,37 +1427,48 @@ hr {
   }
 
   .menu {
-    font-size: 0.75rem;
-    padding: 6px 10px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    font-weight: 500;
   }
 
   .profile {
     margin-left: 10px;
-    padding: 4px 8px;
+    padding: 6px 10px;
   }
 
   .profile .avatar {
-    width: 28px;
-    height: 28px;
-    font-size: 0.7rem;
-    margin-right: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+    margin-right: 8px;
   }
 
   .profile .username {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
-  /* Index Display */
+  /* Index Display - Increased for better readability */
   .index {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 500;
   }
 
   .index-points {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   .percent {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  /* Back Button */
+  .back-btn {
+    font-size: 0.9rem !important;
+    padding: 6px 12px !important;
+    font-weight: 500;
   }
 
   /* Dashboard Content */
